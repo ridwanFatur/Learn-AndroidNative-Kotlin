@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.23550724637681159" />
+        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/drawable/gradient_bg.xml" value="0.1" />
+        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/layout/activity_drawing.xml" value="0.1" />
+        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/layout/activity_finger_paint.xml" value="0.1" />
+        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/layout/control_calendar.xml" value="0.23550724637681159" />
+        <entry key="..\:/Dokumen Ridwan/1_Android Native/[Learn-AndroidNative-Kotlin]/Learn-AndroidKotlin/app/src/main/res/layout/custom_view.xml" value="0.23550724637681159" />
       </map>
     </option>
   </component>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroidKotlin">
         <activity
+            android:name=".FingerPaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawingActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
