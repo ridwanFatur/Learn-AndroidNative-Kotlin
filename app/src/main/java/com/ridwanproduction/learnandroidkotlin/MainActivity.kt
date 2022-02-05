@@ -1,5 +1,6 @@
 package com.ridwanproduction.learnandroidkotlin
 
+import android.Manifest
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
@@ -15,7 +16,10 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.PowerManager
 import android.util.Log
+import androidx.core.content.ContextCompat
 import com.ridwanproduction.learnandroidkotlin.utils.AlarmReceiver
 
 
@@ -26,7 +30,22 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.buttonNotif).setOnClickListener {
 //            Log.d("RidwanStart", System.currentTimeMillis().toString())
-            setAlarm()
+//            setAlarm()
+            allowPermission()
+        }
+    }
+
+    private fun allowPermission(){
+        if (ContextCompat.checkSelfPermission(
+            applicationContext,
+            Manifest.permission.WAKE_LOCK
+        ) == PackageManager.PERMISSION_GRANTED){
+            Log.d("Ridwan","Allowed")
+        }else{
+            Log.d("Ridwan","Not Allowed")
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                requestPermissions(arrayOf( Manifest.permission.WAKE_LOCK),10)
+            }
         }
     }
 
