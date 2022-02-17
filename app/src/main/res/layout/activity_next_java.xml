@@ -7,11 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".NextJavaActivity">
 
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:name="com.ridwanproduction.learnandroidkotlin.CustomArFragment"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Java"
-        android:layout_centerInParent="true"
-        />
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="Left : 20"
+        android:id="@+id/balloonsCount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="0 : 0"
+        android:id="@+id/timer"/>
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="3dp"
+        android:background="@color/purple_200"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="45dp"
+        android:background="@color/purple_200"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKill"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Kill"/>
+
 
 </RelativeLayout>
