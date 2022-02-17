@@ -7,11 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".NextJavaActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Java"
-        android:layout_centerInParent="true"
-        />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"/>
 
 </RelativeLayout>
