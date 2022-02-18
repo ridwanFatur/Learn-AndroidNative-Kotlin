@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ridwanproduction.learnandroidkotlin">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroidKotlin">
         <activity
-            android:name=".NextKotlinActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".NextJavaActivity"
+            android:name=".RecipeActivity"
+            android:theme="@style/Theme.LearnAndroidKotlin.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.LearnAndroidKotlin.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
